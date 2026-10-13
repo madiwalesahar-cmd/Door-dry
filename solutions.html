@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions — DoorDry for PG Renters & Apartment Owners</title>
+  <meta name="description" content="Tailored micro-laundry solutions for Rohan the student and Ananya the professional. Zero floor footprint, zero damage." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+              400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+              800: '#115e59', 900: '#134e4a',
+            }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <span class="font-bold text-lg tracking-tight text-slate-900">DoorDry</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="solutions.html" class="text-brand-600 font-semibold">Solutions</a>
+          <a href="products.html" class="hover:text-brand-600 transition">Products</a>
+          <a href="resources.html" class="hover:text-brand-600 transition">Resources</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="products.html" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-lg hover:bg-brand-700 transition shadow-sm">Shop Now</a>
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white">
+      <div class="px-4 py-3 space-y-1">
+        <a href="solutions.html" class="block px-3 py-2 rounded-lg text-brand-600 font-medium bg-brand-50">Solutions</a>
+        <a href="products.html" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50">Products</a>
+        <a href="resources.html" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50">Resources</a>
+        <a href="products.html" class="block mt-2 px-3 py-2.5 text-center font-semibold text-white bg-brand-600 rounded-lg">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page header -->
+    <section class="bg-gradient-to-b from-brand-50 to-white pt-12 pb-10 sm:pt-16 sm:pb-14">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Solutions by lifestyle</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-2xl mx-auto">Two distinct urban realities. One vertical drying system adapted to each.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+          <a href="#rohan" class="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brand-400 hover:text-brand-700 font-medium transition">Rohan · PG Renter</a>
+          <a href="#ananya" class="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-brand-400 hover:text-brand-700 font-medium transition">Ananya · Apartment Owner</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rohan Section -->
+    <section id="rohan" class="py-14 sm:py-20 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-semibold mb-4">
+              Segment 1 · Lite Model
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Rohan, 22 — PG room in Pune</h2>
+            <p class="mt-2 text-slate-500 text-sm">Engineering student · Shared bathroom · Strict landlord · Budget ₹500</p>
+            <p class="mt-5 text-slate-600 leading-relaxed">
+              Rohan’s 8×10 room has a single bed, a study table, and a door. Clothes used to dry on the bed or a floor stand that blocked the only walkway. Landlord rules ban wall hooks and permanent fixtures.
+            </p>
+            <div class="mt-6 space-y-4">
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Zero floor footprint</h4>
+                  <p class="text-sm text-slate-600">The Lite hangs entirely on the door. Floor stays clear for studying and moving around.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Temporary & reversible</h4>
+                  <p class="text-sm text-slate-600">Hooks over the door. No screws, no tape. Takes it down in seconds when he moves hostels.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Folds flat for storage</h4>
+                  <p class="text-sm text-slate-600">When not in use it collapses to the thickness of a laptop. Slides under the bed or into a suitcase.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="products.html" class="inline-flex justify-center items-center px-5 py-3 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition">
+                Get DoorDry Lite — from ₹399
+              </a>
+              <a href="resources.html" class="inline-flex justify-center items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 transition">
+                PG laundry tips
+              </a>
+            </div>
+          </div>
+          <!-- Visual -->
+          <div class="relative">
+            <div class="aspect-[4/5] rounded-2xl bg-gradient-to-br from-slate-100 to-brand-50 border border-slate-200 flex flex-col items-center justify-center p-8">
+              <div class="w-20 h-20 rounded-2xl bg-white shadow flex items-center justify-center mb-4">
+                <svg class="w-10 h-10 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              </div>
+              <p class="font-semibold text-slate-800">DoorDry Lite</p>
+              <p class="text-sm text-slate-500 mt-1 text-center">Lightweight · Fold-flat · ₹399–₹599</p>
+              <div class="mt-6 grid grid-cols-2 gap-3 w-full max-w-xs text-center text-xs">
+                <div class="bg-white/80 rounded-lg py-2 px-3 border border-slate-100">
+                  <p class="font-bold text-slate-900">30 sec</p>
+                  <p class="text-slate-500">setup</p>
+                </div>
+                <div class="bg-white/80 rounded-lg py-2 px-3 border border-slate-100">
+                  <p class="font-bold text-slate-900">0 mm</p>
+                  <p class="text-slate-500">floor space</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="border-t border-slate-200"></div>
+    </div>
+
+    <!-- Ananya Section -->
+    <section id="ananya" class="py-14 sm:py-20 scroll-mt-20 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <!-- Visual first on desktop for variety -->
+          <div class="order-2 lg:order-1 relative">
+            <div class="aspect-[4/5] rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200 border border-brand-200 flex flex-col items-center justify-center p-8">
+              <div class="w-20 h-20 rounded-2xl bg-white shadow flex items-center justify-center mb-4">
+                <svg class="w-10 h-10 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+              <p class="font-semibold text-slate-800">DoorDry Pro</p>
+              <p class="text-sm text-slate-600 mt-1 text-center">Drip tray · Rust-proof · ₹599–₹799</p>
+              <div class="mt-6 grid grid-cols-2 gap-3 w-full max-w-xs text-center text-xs">
+                <div class="bg-white/90 rounded-lg py-2 px-3 border border-brand-100">
+                  <p class="font-bold text-slate-900">Drip tray</p>
+                  <p class="text-slate-500">built-in</p>
+                </div>
+                <div class="bg-white/90 rounded-lg py-2 px-3 border border-brand-100">
+                  <p class="font-bold text-slate-900">Soft pads</p>
+                  <p class="text-slate-500">door protect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200 text-slate-800 text-xs font-semibold mb-4">
+              Segment 2 · Pro Model
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Ananya, 31 — 1BHK in Bangalore</h2>
+            <p class="mt-2 text-slate-500 text-sm">Product designer · Works from home · Values clean aesthetics · Shares with partner</p>
+            <p class="mt-5 text-slate-600 leading-relaxed">
+              Ananya’s compact living room doubles as her office. A traditional drying rack ruins the look and risks water marks on the wooden floor. She wants something that disappears visually and protects the space she’s invested in.
+            </p>
+            <div class="mt-6 space-y-4">
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Aesthetic preservation</h4>
+                  <p class="text-sm text-slate-600">Minimal profile. Soft-touch protectors leave no scuffs on painted or wooden doors.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Built-in drip tray</h4>
+                  <p class="text-sm text-slate-600">Catches residual water so floors stay dry and free of water stains or warping risk.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Rust-proof arms</h4>
+                  <p class="text-sm text-slate-600">Coated aluminium resists humidity from frequent laundry cycles in monsoon climates.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="products.html" class="inline-flex justify-center items-center px-5 py-3 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition">
+                Get DoorDry Pro — from ₹599
+              </a>
+              <a href="resources.html" class="inline-flex justify-center items-center px-5 py-3 text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-xl hover:bg-slate-50 transition">
+                Compact home guides
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-14 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-2xl font-bold text-slate-900">Still deciding?</h2>
+        <p class="mt-2 text-slate-600">See the full side-by-side feature matrix and pick the model that fits your door and lifestyle.</p>
+        <a href="products.html" class="mt-6 inline-flex items-center px-6 py-3 text-base font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition shadow-lg shadow-brand-600/20">
+          Compare Lite vs Pro
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center gap-2 text-white mb-4">
+            <div class="w-7 h-7 rounded-md bg-brand-500 flex items-center justify-center">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <span class="font-bold">DoorDry</span>
+          </div>
+          <p class="text-sm leading-relaxed">Over-the-door micro-laundry drying for high-density urban living.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Product</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="products.html" class="hover:text-white transition">Lite & Pro</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Support</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="#" class="hover:text-white transition">Shipping</a></li>
+            <li><a href="#" class="hover:text-white transition">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Contact</h4>
+          <p class="text-sm">hello@doordry.in</p>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-slate-800 text-sm text-center">© 2026 DoorDry. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

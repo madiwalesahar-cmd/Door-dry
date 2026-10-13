@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products & Pricing — DoorDry Lite vs Pro</title>
+  <meta name="description" content="Side-by-side comparison of DoorDry Lite (₹399) and DoorDry Pro (₹799). Features, pricing, and which model fits your lifestyle." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+              400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+              800: '#115e59', 900: '#134e4a',
+            }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <span class="font-bold text-lg tracking-tight text-slate-900">DoorDry</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="solutions.html" class="hover:text-brand-600 transition">Solutions</a>
+          <a href="products.html" class="text-brand-600 font-semibold">Products</a>
+          <a href="resources.html" class="hover:text-brand-600 transition">Resources</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#pricing" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-lg hover:bg-brand-700 transition shadow-sm">Shop Now</a>
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white">
+      <div class="px-4 py-3 space-y-1">
+        <a href="solutions.html" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50">Solutions</a>
+        <a href="products.html" class="block px-3 py-2 rounded-lg text-brand-600 font-medium bg-brand-50">Products</a>
+        <a href="resources.html" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50">Resources</a>
+        <a href="#pricing" class="block mt-2 px-3 py-2.5 text-center font-semibold text-white bg-brand-600 rounded-lg">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-brand-50 to-white pt-12 pb-10 sm:pt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Lite vs Pro</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-xl mx-auto">Same core idea. Different priorities. Pick the model that matches how you live and what you value.</p>
+      </div>
+    </section>
+
+    <!-- Pricing cards -->
+    <section id="pricing" class="pb-16 sm:pb-20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Lite -->
+          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden flex flex-col">
+            <div class="p-6 sm:p-8 border-b border-slate-100">
+              <p class="text-sm font-semibold text-brand-600">For PG & Hostel Renters</p>
+              <h2 class="mt-1 text-2xl font-bold text-slate-900">DoorDry Lite</h2>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900">₹399</span>
+                <span class="text-slate-500 text-sm">– ₹599</span>
+              </div>
+              <p class="mt-2 text-sm text-slate-500">Starting price for standard door size</p>
+              <a href="#" class="mt-6 flex w-full justify-center py-3 text-sm font-semibold text-brand-700 bg-brand-50 rounded-xl hover:bg-brand-100 transition">
+                Add Lite to cart
+              </a>
+            </div>
+            <div class="p-6 sm:p-8 flex-1">
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">What’s included</p>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Over-the-door hanging frame
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Lightweight aluminium arms (4–6)
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Folds completely flat
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Fits 30–36″ standard doors
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  No tools, 30-second setup
+                </li>
+                <li class="flex items-start gap-2.5 text-slate-400">
+                  <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Drip tray (Pro only)
+                </li>
+                <li class="flex items-start gap-2.5 text-slate-400">
+                  <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Soft-touch door protectors
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pro -->
+          <div class="rounded-2xl border-2 border-brand-500 bg-white overflow-hidden flex flex-col shadow-lg relative">
+            <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Most popular</div>
+            <div class="p-6 sm:p-8 border-b border-brand-100 bg-brand-50/50">
+              <p class="text-sm font-semibold text-brand-700">For Compact Apartments</p>
+              <h2 class="mt-1 text-2xl font-bold text-slate-900">DoorDry Pro</h2>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-4xl font-extrabold text-slate-900">₹799</span>
+                <span class="text-slate-500 text-sm">– ₹799</span>
+              </div>
+              <p class="mt-2 text-sm text-slate-500">Full feature set · One clear price</p>
+              <a href="#" class="mt-6 flex w-full justify-center py-3 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition shadow-md shadow-brand-600/25">
+                Add Pro to cart
+              </a>
+            </div>
+            <div class="p-6 sm:p-8 flex-1">
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">Everything in Lite, plus</p>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Built-in removable drip tray
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Rust-proof coated arms
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Soft-touch silicone door pads
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Extra arm capacity (up to 8)
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Reinforced frame for daily use
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-5 h-5 text-brand-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Aesthetic matte finish
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature comparison matrix -->
+    <section class="py-14 sm:py-20 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold text-slate-900 text-center mb-10">Feature comparison</h2>
+        <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+          <table class="w-full text-sm text-left">
+            <thead>
+              <tr class="border-b border-slate-200 bg-slate-50">
+                <th class="px-4 py-3.5 font-semibold text-slate-700 w-1/2">Feature</th>
+                <th class="px-4 py-3.5 font-semibold text-slate-700 text-center">Lite</th>
+                <th class="px-4 py-3.5 font-semibold text-brand-700 text-center">Pro</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="px-4 py-3.5 text-slate-700">Price</td>
+                <td class="px-4 py-3.5 text-center font-medium">₹399–₹599</td>
+                <td class="px-4 py-3.5 text-center font-medium text-brand-700">₹799</td>
+              </tr>
+              <tr class="bg-slate-50/50">
+                <td class="px-4 py-3.5 text-slate-700">Target user</td>
+                <td class="px-4 py-3.5 text-center">PG / Hostel</td>
+                <td class="px-4 py-3.5 text-center">1BHK / 2BHK</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3.5 text-slate-700">Floor footprint</td>
+                <td class="px-4 py-3.5 text-center"><span class="text-brand-600 font-medium">Zero</span></td>
+                <td class="px-4 py-3.5 text-center"><span class="text-brand-600 font-medium">Zero</span></td>
+              </tr>
+              <tr class="bg-slate-50/50">
+                <td class="px-4 py-3.5 text-slate-700">Installation damage</td>
+                <td class="px-4 py-3.5 text-center">None</td>
+                <td class="px-4 py-3.5 text-center">None</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3.5 text-slate-700">Folds flat</td>
+                <td class="px-4 py-3.5 text-center"><svg class="w-5 h-5 text-brand-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></td>
+                <td class="px-4 py-3.5 text-center"><svg class="w-5 h-5 text-brand-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></td>
+              </tr>
+              <tr class="bg-slate-50/50">
+                <td class="px-4 py-3.5 text-slate-700">Built-in drip tray</td>
+                <td class="px-4 py-3.5 text-center text-slate-400">—</td>
+                <td class="px-4 py-3.5 text-center"><svg class="w-5 h-5 text-brand-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3.5 text-slate-700">Rust-proof coating</td>
+                <td class="px-4 py-3.5 text-center text-slate-400">Basic</td>
+                <td class="px-4 py-3.5 text-center"><svg class="w-5 h-5 text-brand-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></td>
+              </tr>
+              <tr class="bg-slate-50/50">
+                <td class="px-4 py-3.5 text-slate-700">Soft door protectors</td>
+                <td class="px-4 py-3.5 text-center text-slate-400">—</td>
+                <td class="px-4 py-3.5 text-center"><svg class="w-5 h-5 text-brand-500 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3.5 text-slate-700">Arm capacity</td>
+                <td class="px-4 py-3.5 text-center">4–6</td>
+                <td class="px-4 py-3.5 text-center font-medium">Up to 8</td>
+              </tr>
+              <tr class="bg-slate-50/50">
+                <td class="px-4 py-3.5 text-slate-700">Best for</td>
+                <td class="px-4 py-3.5 text-center text-xs">Temporary, budget, frequent moves</td>
+                <td class="px-4 py-3.5 text-center text-xs">Daily use, floor protection, aesthetics</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick decision helper -->
+    <section class="py-14 sm:py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-xl font-bold text-slate-900">Still not sure?</h2>
+        <p class="mt-2 text-slate-600">If you move often or share a PG → <strong class="text-slate-900">Lite</strong>. If you own or rent a compact flat long-term and care about floors & finish → <strong class="text-slate-900">Pro</strong>.</p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+          <a href="solutions.html#rohan" class="inline-flex justify-center px-5 py-2.5 text-sm font-semibold text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50">Rohan’s story (Lite)</a>
+          <a href="solutions.html#ananya" class="inline-flex justify-center px-5 py-2.5 text-sm font-semibold text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50">Ananya’s story (Pro)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center gap-2 text-white mb-4">
+            <div class="w-7 h-7 rounded-md bg-brand-500 flex items-center justify-center">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <span class="font-bold">DoorDry</span>
+          </div>
+          <p class="text-sm leading-relaxed">Over-the-door micro-laundry drying for high-density urban living.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Product</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="products.html" class="hover:text-white transition">Lite & Pro</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="resources.html" class="hover:text-white transition">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Support</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="#" class="hover:text-white transition">Shipping</a></li>
+            <li><a href="#" class="hover:text-white transition">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-3">Contact</h4>
+          <p class="text-sm">hello@doordry.in</p>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-slate-800 text-sm text-center">© 2026 DoorDry. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
